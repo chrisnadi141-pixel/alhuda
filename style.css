@@ -12,29 +12,30 @@ body {
 
 
 /* ================= JADWAL SHOLAT ================= */
-.footer-text {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background: #222;
-  color: white;
-  text-align: center;
-  padding: 10px;
+.countdown{
+  position:absolute;           /* overlay */
+  bottom:120px;                /* SESUAIKAN jarak ke box imsak */
+  left:10px;                  /* sejajar kanan */
+  background:rgba(0,0,0,.55);
+  padding:10px 14px;
+  border-radius:12px;
+  font-size:1.1rem;
+  font-weight:600;
+  color:#ff4d4d;
+  text-align:right;
+  max-width:500px;
 }
 
 .jadwal {
-  margin-top: 20px;          
+  margin-top: auto;          /* INI KUNCINYA */
   display: flex;
+  flex-direction: row;       /* 1 row */
   gap: 15px;
-  padding: 0 15px;
-  box-sizing: border-box;
 }
 
 .box {
-  flex: 1;
+  flex: 1;               /* semua box sama lebar */
   text-align: center;
-  padding: 15px 5px;
-  border-radius: 6px;
 }
 
 .box span {
@@ -61,4 +62,14 @@ body {
   margin-top: 15px;
   text-align: center;
   font-size: 22px;
+}
+
+.footer-text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 10px;
 }
